@@ -2632,15 +2632,17 @@ body {
 .content-wrap {
   opacity: 0.7;
 }
-.sidebar {
+.main-inner {
+  margin-top: 60px;
+  padding: 60px 60px 60px 60px;
   opacity: 0.7;
+}
+.sidebar-inner {
+  background: rgba(255,255,255,0.7) none repeat scroll !important;
 }
 .header-inner {
   background: rgba(255,255,255,0.7);
 }
 .popup {
   opacity: 0.7;
-}
-.post-block {
-  background: rgba(255,255,255,0.1) none repeat scroll !important;
 }
