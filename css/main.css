@@ -2377,7 +2377,7 @@ ul.breadcrumb li:last-child {
 }
 .header-inner {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: initial;
   width: 240px;
 }
@@ -2411,7 +2411,7 @@ ul.breadcrumb li:last-child {
   }
 }
 .main-inner {
-  border-radius: initial;
+  border-radius: 20px 20px 20px 20px;
   box-sizing: border-box;
   width: calc(100% - 252px);
 }
@@ -2553,7 +2553,7 @@ ul.breadcrumb li:last-child {
 }
 .sidebar-inner {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 20px;
   box-shadow: initial;
   box-sizing: border-box;
   color: var(--text-color);
@@ -2645,4 +2645,11 @@ body {
 }
 .popup {
   opacity: 0.7;
+}
+.post {
+  margin-top: 60px;
+  padding: 20px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0 0 5px #788072;
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
