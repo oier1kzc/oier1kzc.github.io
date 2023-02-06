@@ -2815,7 +2815,7 @@ body {
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 100% 100%;
+  background-size: 100% 100%;
 }
 .main-inner {
   margin-top: 20px;
