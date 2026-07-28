@@ -60,6 +60,57 @@ pnpm check
 pnpm build
 ```
 
+## 更换头像与背景图
+
+头像和页面顶部背景图在 `src/config.ts` 中配置。当前使用 Fuwari 自带的演示图片：
+
+```ts
+banner: {
+  enable: true,
+  src: "assets/images/demo-banner.png",
+  position: "center",
+  // ...
+},
+
+export const profileConfig = {
+  avatar: "assets/images/demo-avatar.png",
+  // ...
+};
+```
+
+对应的图片文件位于：
+
+```text
+src/assets/images/demo-avatar.png
+src/assets/images/demo-banner.png
+```
+
+更换时可以把自己的图片放入 `src/assets/images/`，然后修改 `avatar` 或 `banner.src`。例如：
+
+```ts
+avatar: "assets/images/my-avatar.png"
+```
+
+```ts
+banner: {
+  enable: true,
+  src: "assets/images/my-banner.jpg",
+  position: "center",
+  // ...
+}
+```
+
+`banner.enable` 设为 `false` 会隐藏背景图；`banner.position` 可以设为 `"top"`、`"center"` 或 `"bottom"`，用于调整图片的裁切位置。
+
+也可以把图片放入 `public/images/`，此时配置使用以 `/` 开头的路径：
+
+```ts
+avatar: "/images/my-avatar.png"
+src: "/images/my-banner.jpg"
+```
+
+修改后运行 `pnpm dev`，在浏览器中确认头像裁切和背景图位置是否合适。
+
 ## 添加文章
 
 推荐使用项目提供的命令创建文章：
