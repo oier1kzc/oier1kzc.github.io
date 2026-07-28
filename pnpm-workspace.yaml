@@ -6,3 +6,7 @@ allowBuilds:
   esbuild: true
   sharp: true
   swup: true
+
+minimumReleaseAgeExclude:
+  - '@astrojs/check@0.9.10'
+  - astro@7.1.4
